@@ -30,6 +30,17 @@ namespace API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CQRS With MediatR APIs", Version = "v1" });
             });
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "MyAllowSpecificOrigins",
+                                  builder =>
+                                  {
+                                      builder.AllowAnyOrigin()
+                                             .AllowAnyHeader()
+                                             .AllowAnyMethod();
+                                  });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +56,8 @@ namespace API
             app.UseRouting();
 
             app.UseSwagger();
+
+            app.UseCors("MyAllowSpecificOrigins");
 
             app.UseSwaggerUI(c =>
             {
