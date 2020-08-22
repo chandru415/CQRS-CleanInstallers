@@ -11,8 +11,6 @@
 
   <ItemGroup>
     <Folder Include="Contracts\" />
-    <Folder Include="Installers\Extensions\" />
-    <Folder Include="Installers\InstallServices\" />
   </ItemGroup>
 
   <ItemGroup>
