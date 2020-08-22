@@ -1,6 +1,6 @@
 <p align="center">
  <h2 align="center">CQRS-CleanInstallers</h2>
- <p align="center">A clean way to implement <b><i>dependency injection</b></i> in startup.cs on .Net Core Web Project with CQRS & MediatR. </b></p>
+ <p align="center">A clean way to implement <b><i>dependency injection(DI)</b></i> in startup.cs on .Net Core Web Project with CQRS & MediatR. </b></p>
 </p>
 <br/>
 
@@ -137,7 +137,7 @@ Web Project had configured with few of layered class libiary project, swagger in
 
 <br />
 
-###### Thats clean DI configuration was finished. similarly we can configuration other DI or we can existing DIs.
+###### Thats it, clean DI configuration was finished. similarly we can configure other DI(s) or we can extend existing DI(s).
 
 <br/> 
 
